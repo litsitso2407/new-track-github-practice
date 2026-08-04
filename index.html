@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="form">
+	<h2>Form Contract</h2>
+	<form id="FormRegistration" method="post">
+		<label for="name">Name</label><br>
+		<input type="text" name="name" id="name" required><br>
+		<label for="email">Email</label><br>
+		<input type="email" name="email" id="email" required><br>
+		<label for="gender">Gender</label><br>
+		<input type="radio" name="gender"  id="male" value="male">Male
+		<input type="radio" name="gender" id="female" value="female">Female<br>
+		<label for="Date">Date of Birth</label><br>
+		<input type="date" name="date" id="date"><br>
+		<label for="Study">Year of Study</label>
+		<select id="Study" name="study">
+			<option>1st Year</option>
+			<option>2nd Year</option>
+			<option>3rd Year</option>
+			<option>4th Year</option>
+		</select><br>
+
+        <fieldset> 
+		<label>Comments</label><br>
+		<textarea name="Comments" id="Comments" rows="10" cols="50"></textarea><br>
+		<label>Agree to Terms and Conditions</label>
+		<input type="checkbox" name="checkbox">
+		</fieldset> 
+
+		<center><input type="button" name="Submit" value="Submit" onclick="displaycontent()"></center>
+
+	</form>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
